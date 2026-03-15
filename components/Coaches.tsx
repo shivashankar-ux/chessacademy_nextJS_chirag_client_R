@@ -10,6 +10,7 @@ const coaches = [
     img: "/images/puneet.jpg",
     imgAlt: "Puneet Manchanda — Founder, Check vs Mate Chess Academy",
     badge: "♟ Founder",
+    position: "object-center",
   },
   {
     name: "Chirag Atreja",
@@ -20,6 +21,7 @@ const coaches = [
     img: "/images/chirag.jpg",
     imgAlt: "Chirag Atreja — Co-Founder, Check vs Mate Chess Academy",
     badge: "♞ Co-Founder",
+    position: "object-center",
   },
 ];
 
@@ -65,7 +67,7 @@ export default function Coaches() {
                   src={coach.img}
                   alt={coach.imgAlt}
                   fill
-                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  className={`object-cover ${coach.position} group-hover:scale-105 transition-transform duration-500`}
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1A0A0A] via-transparent to-transparent" />
