@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --crimson: #8B0000;
+  --crimson-light: #A50000;
+  --crimson-dark: #6B0000;
+  --gold: #C9A84C;
+  --cream: #F5F0E8;
+  --dark: #1A0A0A;
+  --board-light: #F0D9B5;
+  --board-dark: #B58863;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--dark);
+}
+
+/* Chess board pattern utility */
+.chess-pattern {
+  background-image: repeating-conic-gradient(
+    rgba(139, 0, 0, 0.08) 0% 25%,
+    transparent 0% 50%
+  );
+  background-size: 40px 40px;
+}
+
+.chess-pattern-dark {
+  background-image: repeating-conic-gradient(
+    rgba(255, 255, 255, 0.04) 0% 25%,
+    transparent 0% 50%
+  );
+  background-size: 40px 40px;
+}
+
+/* Decorative border */
+.royal-border {
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 0 4px rgba(201, 168, 76, 0.15);
+}
+
+/* Section reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gold shimmer text */
+.gold-text {
+  background: linear-gradient(
+    90deg,
+    var(--gold) 0%,
+    #e8c96a 40%,
+    var(--gold) 60%,
+    #a07830 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--crimson);
+  border-radius: 3px;
+}
+
+/* Selection */
+::selection {
+  background: rgba(139, 0, 0, 0.2);
+  color: var(--crimson-dark);
+}
