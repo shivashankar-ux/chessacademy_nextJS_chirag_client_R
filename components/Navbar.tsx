@@ -8,9 +8,7 @@ import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
   { href: "/gallery", label: "Gallery" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -42,20 +40,18 @@ export default function Navbar() {
         aria-label="Main navigation"
       >
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-3 group"
-            aria-label="Check vs Mate Chess Academy — Home"
+            className="flex items-center gap-3"
+            aria-label="Check vs Mate Chess Academy Home"
           >
-            {/* TODO: Replace with actual logo file in public/images/logo.png */}
-            <div className="w-10 h-10 md:w-12 md:h-12 relative flex-shrink-0">
-              <div className="w-full h-full rounded-full bg-white flex items-center justify-center border-2 border-[#C9A84C]">
-                <span className="text-[#8B0000] font-display font-black text-lg leading-none">
-                  ♞
-                </span>
-              </div>
-            </div>
+            <Image
+              src="/images/logo.png"
+              alt="Check vs Mate Chess Academy Logo"
+              width={48}
+              height={48}
+              className="w-10 h-10 md:w-12 md:h-12 object-contain"
+            />
             <div className="hidden sm:block">
               <p className="text-white font-display font-bold text-lg leading-none tracking-wide">
                 Check vs Mate
@@ -66,7 +62,6 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
@@ -81,15 +76,11 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/contact"
-              className="ml-4 px-5 py-2 bg-[#C9A84C] text-[#8B0000] font-body font-bold text-sm rounded tracking-wide hover:bg-[#e8c96a] transition-all duration-200 shadow-md"
-            >
+            <a href="#contact" className="ml-4 px-5 py-2 bg-[#C9A84C] text-[#8B0000] font-body font-bold text-sm rounded tracking-wide hover:bg-[#e8c96a] transition-all duration-200 shadow-md">
               Book Free Demo
-            </Link>
+            </a>
           </div>
 
-          {/* Mobile hamburger */}
           <button
             className="md:hidden text-white p-2 rounded hover:bg-white/10 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
@@ -100,12 +91,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
-        <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ${
-            isOpen ? "max-h-96 pb-4" : "max-h-0"
-          }`}
-        >
+        <div className={`md:hidden overflow-hidden transition-all duration-300 ${isOpen ? "max-h-60 pb-4" : "max-h-0"}`}>
           <div className="flex flex-col gap-1 pt-2 border-t border-white/20">
             {navLinks.map((link) => (
               <Link
@@ -120,12 +106,9 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/contact"
-              className="mt-2 px-4 py-3 bg-[#C9A84C] text-[#8B0000] font-body font-bold text-sm rounded tracking-wide text-center hover:bg-[#e8c96a] transition-colors"
-            >
+            <a href="#contact" className="mt-2 px-4 py-3 bg-[#C9A84C] text-[#8B0000] font-body font-bold text-sm rounded tracking-wide text-center hover:bg-[#e8c96a] transition-colors">
               Book Free Demo
-            </Link>
+            </a>
           </div>
         </div>
       </nav>
