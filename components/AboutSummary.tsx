@@ -4,10 +4,18 @@ export default function AboutSummary() {
   return (
     <section
       id="about-summary"
-      className="pt-32 pb-20 md:pt-40 md:pb-28 bg-[#F5F0E8]"
+      className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"
       aria-label="About Check vs Mate Chess Academy"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Background Image Setup */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: 'url(https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg?auto=compress&cs=tinysrgb&w=1920&hq=1)' }}
+      />
+      {/* Overlay to preserve text legibility and original color scheme */}
+      <div className="absolute inset-0 bg-[#F5F0E8]/90 backdrop-blur-[1px]" />
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#8B0000] rounded-lg" />
