@@ -35,19 +35,19 @@ const formats = [
     icon: <Laptop size={28} className="text-[#C9A84C]" />,
     title: "Online Sessions",
     desc: "Live, interactive coaching sessions from the comfort of home. Available nationwide with flexible timings.",
-    img: "https://images.unsplash.com/photo-1610664972580-87a32ea07122?w=600&q=80",
+    img: "https://images.pexels.com/photos/814133/pexels-photo-814133.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
     icon: <Home size={28} className="text-[#C9A84C]" />,
     title: "Home Visit",
     desc: "Personalized one-on-one lessons at your doorstep. Tailored to your child's pace and learning style.",
-    img: "https://images.unsplash.com/photo-1586523999496-ce5bc4a923ec?w=600&q=80",
+    img: "https://images.pexels.com/photos/277124/pexels-photo-277124.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
     icon: <Trophy size={28} className="text-[#C9A84C]" />,
     title: "Tournaments",
     desc: "Specialized competitive training including opening repertoire, clock management, and match psychology.",
-    img: "https://images.unsplash.com/photo-1580541832626-2a7156f7efec?w=600&q=80",
+    img: "https://images.pexels.com/photos/1040157/pexels-photo-1040157.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
 ];
 
