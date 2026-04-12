@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import TopBar from "./TopBar";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -35,6 +36,7 @@ export default function Navbar() {
       }`}
       role="banner"
     >
+      <TopBar />
       <nav
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         aria-label="Main navigation"
@@ -76,7 +78,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a href="#contact" className="ml-4 px-5 py-2 bg-[#C9A84C] text-[#8B0000] font-body font-bold text-sm rounded tracking-wide hover:bg-[#e8c96a] transition-all duration-200 shadow-md">
+            <a href="https://wa.me/918800840353?text=Hi!%20I%20am%20interested%20in%20a%20free%20demo%20class." target="_blank" rel="noopener noreferrer" className="ml-4 px-5 py-2 bg-[#C9A84C] text-[#8B0000] font-body font-bold text-sm rounded tracking-wide hover:bg-[#e8c96a] transition-all duration-200 shadow-md">
               Book Free Demo
             </a>
           </div>
@@ -106,7 +108,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a href="#contact" className="mt-2 px-4 py-3 bg-[#C9A84C] text-[#8B0000] font-body font-bold text-sm rounded tracking-wide text-center hover:bg-[#e8c96a] transition-colors">
+            <a href="https://wa.me/918800840353?text=Hi!%20I%20am%20interested%20in%20a%20free%20demo%20class." target="_blank" rel="noopener noreferrer" className="mt-2 px-4 py-3 bg-[#C9A84C] text-[#8B0000] font-body font-bold text-sm rounded tracking-wide text-center hover:bg-[#e8c96a] transition-colors">
               Book Free Demo
             </a>
           </div>

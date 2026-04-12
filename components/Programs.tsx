@@ -3,22 +3,22 @@ import Link from "next/link";
 const ageGroups = [
   {
     icon: "👶",
-    title: "Under 6 Years",
+    title: "Under 7 Years",
     desc: "Fun, game-based introduction to chess. Build focus and basic piece movements in an engaging environment.",
   },
   {
     icon: "🧒",
-    title: "Under 10 Years",
+    title: "Under 9 Years",
     desc: "Foundational tactics, opening principles, and competitive mindset. Preparation for school-level tournaments.",
   },
   {
     icon: "🧑",
-    title: "Under 14 Years",
+    title: "Under 11 Years",
     desc: "Intermediate strategy, endgames, and structured tournament preparation. District and state-level focus.",
   },
   {
     icon: "🎓",
-    title: "Above 14 Years",
+    title: "Under 13 Years",
     desc: "Advanced positional play, deep calculation, and competitive coaching for serious aspirants.",
   },
 ];
@@ -68,40 +68,12 @@ export default function Programs() {
             <span className="text-[#8B0000]">All Age Groups</span>
           </h2>
           <p className="text-[#1A0A0A]/60 font-body max-w-xl mx-auto">
-            Fresh batches starting soon — Under 6 · Under 10 · Under 14 · Above
-            14
+            Fresh batches starting soon — Under 7 · Under 9 · Under 11 · Under 13
           </p>
         </div>
 
-        {/* Age Groups */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
-          {ageGroups.map((group) => (
-            <div
-              key={group.title}
-              className="group p-6 bg-[#F5F0E8] rounded-lg border border-[#8B0000]/10 hover:border-[#8B0000]/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-            >
-              <div className="text-3xl mb-3">{group.icon}</div>
-              <h3 className="font-display font-bold text-[#8B0000] text-lg mb-2">
-                {group.title}
-              </h3>
-              <p className="text-[#1A0A0A]/65 font-body text-sm leading-relaxed">
-                {group.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        {/* Divider */}
-        <div className="flex items-center gap-4 mb-12">
-          <div className="h-px flex-1 bg-[#8B0000]/10" />
-          <span className="text-[#8B0000] font-display font-semibold text-sm uppercase tracking-widest">
-            Training Formats
-          </span>
-          <div className="h-px flex-1 bg-[#8B0000]/10" />
-        </div>
-
         {/* Formats */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
           {formats.map((fmt) => (
             <div
               key={fmt.title}
@@ -118,14 +90,43 @@ export default function Programs() {
           ))}
         </div>
 
+        {/* Divider */}
+        <div className="flex items-center gap-4 mb-12">
+          <div className="h-px flex-1 bg-[#8B0000]/10" />
+          <span className="text-[#8B0000] font-display font-semibold text-sm uppercase tracking-widest">
+            Age Groups
+          </span>
+          <div className="h-px flex-1 bg-[#8B0000]/10" />
+        </div>
+
+        {/* Age Groups */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+          {ageGroups.map((group) => (
+            <div
+              key={group.title}
+              className="group p-6 bg-[#F5F0E8] rounded-lg border border-[#8B0000]/10 hover:border-[#8B0000]/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            >
+              <div className="text-3xl mb-3">{group.icon}</div>
+              <h3 className="font-display font-bold text-[#8B0000] text-lg mb-2">
+                {group.title}
+              </h3>
+              <p className="text-[#1A0A0A]/65 font-body text-sm leading-relaxed">
+                {group.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+
         {/* CTA */}
         <div className="text-center">
-          <Link
-            href="/contact"
+          <a
+            href="https://wa.me/918800840353?text=Hi!%20I%20would%20like%20to%20enroll%20my%20child."
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-[#C9A84C] text-[#8B0000] font-body font-bold text-base rounded tracking-wide hover:bg-[#e8c96a] transition-colors shadow-lg"
           >
             👦 Enrol Your Child — 100+ Kids Trained
-          </Link>
+          </a>
         </div>
       </div>
     </section>

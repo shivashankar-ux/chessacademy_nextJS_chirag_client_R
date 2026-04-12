@@ -147,10 +147,10 @@ export default function ContactForm() {
           className="w-full px-4 py-3 border border-[#8B0000]/20 rounded-lg bg-white font-body text-sm text-[#1A0A0A] focus:outline-none focus:ring-2 focus:ring-[#8B0000]/30 focus:border-[#8B0000] transition-colors"
         >
           <option value="">Select age group</option>
-          <option value="Under 6">Under 6 Years</option>
-          <option value="Under 10">Under 10 Years</option>
-          <option value="Under 14">Under 14 Years</option>
-          <option value="Above 14">Above 14 Years</option>
+          <option value="Under 7">Under 7 Years</option>
+          <option value="Under 9">Under 9 Years</option>
+          <option value="Under 11">Under 11 Years</option>
+          <option value="Under 13">Under 13 Years</option>
           <option value="Not sure">Not sure yet</option>
         </select>
       </div>

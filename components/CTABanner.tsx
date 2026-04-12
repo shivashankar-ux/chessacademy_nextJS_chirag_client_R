@@ -33,12 +33,22 @@ export default function CTABanner() {
           online nationwide, or at your home.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Link
-            href="/contact"
+          <a
+            href="https://wa.me/918800840353?text=Hi!%20I%20am%20interested%20in%20a%20free%20demo%20class."
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-4 bg-[#C9A84C] text-[#8B0000] font-body font-bold text-base rounded tracking-wide hover:bg-[#e8c96a] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 shadow-lg"
           >
             Book Free Demo Class
-          </Link>
+          </a>
+          <a
+            href="https://wa.me/918800840353?text=Hi!%20I%20am%20interested%20in%20chess%20classes."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-[#25D366] text-white font-body font-bold text-base rounded tracking-wide hover:bg-[#20b858] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 shadow-lg flex items-center justify-center gap-2"
+          >
+            💬 WhatsApp Us
+          </a>
           <a
             href="tel:+919810436745"
             className="px-8 py-4 bg-white/10 text-white font-body font-semibold text-base rounded tracking-wide border border-white/30 hover:bg-white/20 hover:-translate-y-0.5 transition-all duration-200"
