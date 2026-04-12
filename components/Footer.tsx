@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram } from "lucide-react";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -37,14 +37,8 @@ export default function Footer() {
               <span className="text-white/70 text-sm">4.9 · 97+ Reviews</span>
             </div>
             <div className="flex gap-3">
-              <a href="#" aria-label="Instagram" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#8B0000] transition-colors">
+              <a href="https://www.instagram.com/check.vs.mate" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#8B0000] transition-colors">
                 <Instagram size={16} />
-              </a>
-              <a href="#" aria-label="Facebook" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#8B0000] transition-colors">
-                <Facebook size={16} />
-              </a>
-              <a href="#" aria-label="YouTube" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#8B0000] transition-colors">
-                <Youtube size={16} />
               </a>
             </div>
           </div>

@@ -51,41 +51,79 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {testimonials.map((t, i) => (
-            <div
-              key={t.name}
-              className="bg-white rounded-xl p-6 shadow-sm border border-[#8B0000]/10 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col"
-            >
-              {/* Stars */}
-              <div className="flex mb-4">
-                {Array.from({ length: t.rating }).map((_, si) => (
-                  <span key={si} className="text-[#C9A84C] text-lg">
-                    ★
-                  </span>
-                ))}
-              </div>
-              {/* Quote */}
-              <p className="text-[#1A0A0A]/75 font-body text-sm leading-relaxed flex-1 mb-5">
-                &ldquo;{t.text}&rdquo;
-              </p>
-              {/* Author */}
-              <div className="flex items-center gap-3 pt-4 border-t border-[#8B0000]/10">
-                <div className="w-9 h-9 rounded-full bg-[#8B0000] flex items-center justify-center text-white font-display font-bold text-sm flex-shrink-0">
-                  {t.name.charAt(0)}
+        {/* Cards Marquee */}
+        <div className="relative overflow-hidden flex w-full group py-4 -mx-4 px-4 sm:mx-0 sm:px-0">
+          <div className="flex gap-6 animate-marquee shrink-0 pr-6" style={{ animationDuration: "35s" }}>
+            {[...testimonials, ...testimonials].map((t, i) => (
+              <div
+                key={`${t.name}-${i}`}
+                className="w-[300px] sm:w-[350px] bg-white rounded-xl p-6 shadow-sm border border-[#8B0000]/10 hover:shadow-md transition-all duration-300 flex flex-col shrink-0"
+              >
+                {/* Stars */}
+                <div className="flex mb-4">
+                  {Array.from({ length: t.rating }).map((_, si) => (
+                    <span key={si} className="text-[#C9A84C] text-lg">
+                      ★
+                    </span>
+                  ))}
                 </div>
-                <div>
-                  <p className="font-body font-bold text-[#1A0A0A] text-sm">
-                    {t.name}
-                  </p>
-                  <p className="text-[#1A0A0A]/45 text-xs font-body">
-                    {t.detail}
-                  </p>
+                {/* Quote */}
+                <p className="text-[#1A0A0A]/75 font-body text-sm leading-relaxed flex-1 mb-5 whitespace-normal">
+                  &ldquo;{t.text}&rdquo;
+                </p>
+                {/* Author */}
+                <div className="flex items-center gap-3 pt-4 border-t border-[#8B0000]/10">
+                  <div className="w-9 h-9 rounded-full bg-[#8B0000] flex items-center justify-center text-white font-display font-bold text-sm flex-shrink-0">
+                    {t.name.charAt(0)}
+                  </div>
+                  <div>
+                    <p className="font-body font-bold text-[#1A0A0A] text-sm">
+                      {t.name}
+                    </p>
+                    <p className="text-[#1A0A0A]/45 text-xs font-body">
+                      {t.detail}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <div className="flex gap-6 animate-marquee shrink-0 pr-6" aria-hidden="true" style={{ animationDuration: "35s" }}>
+            {[...testimonials, ...testimonials].map((t, i) => (
+              <div
+                key={`${t.name}-copy-${i}`}
+                className="w-[300px] sm:w-[350px] bg-white rounded-xl p-6 shadow-sm border border-[#8B0000]/10 hover:shadow-md transition-all duration-300 flex flex-col shrink-0"
+              >
+                {/* Stars */}
+                <div className="flex mb-4">
+                  {Array.from({ length: t.rating }).map((_, si) => (
+                    <span key={si} className="text-[#C9A84C] text-lg">
+                      ★
+                    </span>
+                  ))}
+                </div>
+                {/* Quote */}
+                <p className="text-[#1A0A0A]/75 font-body text-sm leading-relaxed flex-1 mb-5 whitespace-normal">
+                  &ldquo;{t.text}&rdquo;
+                </p>
+                {/* Author */}
+                <div className="flex items-center gap-3 pt-4 border-t border-[#8B0000]/10">
+                  <div className="w-9 h-9 rounded-full bg-[#8B0000] flex items-center justify-center text-white font-display font-bold text-sm flex-shrink-0">
+                    {t.name.charAt(0)}
+                  </div>
+                  <div>
+                    <p className="font-body font-bold text-[#1A0A0A] text-sm">
+                      {t.name}
+                    </p>
+                    <p className="text-[#1A0A0A]/45 text-xs font-body">
+                      {t.detail}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
