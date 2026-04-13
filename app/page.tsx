@@ -23,9 +23,9 @@ export default function HomePage() {
     <>
       <AboutSummary />
       <Programs />
+      <GalleryCarousel />
       <Coaches />
       <WhyChess />
-      <GalleryCarousel />
       <Testimonials />
       <CTABanner />
     </>

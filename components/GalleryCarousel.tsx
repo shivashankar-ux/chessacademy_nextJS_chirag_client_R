@@ -6,24 +6,24 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
   {
-    src: "/images/carousel-1.png",
-    alt: "Kids learning chess at the academy",
-    caption: "Strategic learning in a modern environment"
+    src: "/images/photo1.jpg",
+    alt: "Chess Academy students in action",
+    caption: "Dynamic learning and strategic engagement"
   },
   {
-    src: "/images/carousel-2.png",
-    alt: "Intense focus during a chess tournament",
-    caption: "Developing concentration and focus"
+    src: "/images/photo2.jpg",
+    alt: "Focus and concentration at the academy",
+    caption: "Fostering deep focus through the game"
   },
   {
-    src: "https://images.pexels.com/photos/814133/pexels-photo-814133.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    alt: "Online chess training session",
-    caption: "Flexible online coaching for all"
+    src: "/images/photo3.jpg",
+    alt: "Chess tournament success",
+    caption: "Preparing for competitive excellence"
   },
   {
-    src: "https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    alt: "Hands moving chess piece",
-    caption: "Mastering the art of every move"
+    src: "/images/photo1.jpg",
+    alt: "Academy classroom session",
+    caption: "Interactive group training sessions"
   }
 ];
 
