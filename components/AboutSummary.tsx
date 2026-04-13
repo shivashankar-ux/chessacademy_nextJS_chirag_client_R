@@ -17,20 +17,29 @@ export default function AboutSummary() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative">
-            <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#8B0000] rounded-lg" />
-            <div className="relative rounded-lg overflow-hidden shadow-2xl">
+          <div className="relative lg:p-6">
+            {/* Decorative Offset Border - Responsive */}
+            <div className="absolute -top-2 -left-2 md:-top-6 md:-left-6 w-full h-full border-2 border-[#8B0000] rounded-xl opacity-20 md:opacity-100" />
+            
+            {/* Main Image Container */}
+            <div className="relative rounded-xl overflow-hidden shadow-2xl aspect-[4/5] md:aspect-auto">
               <Image
-                src="/images/placeholder.jpg"
-                alt="Placeholder for Chess Academy Image (Please replace with your image)"
+                src="/images/photo1.jpg"
+                alt="Expert Chess Coaching at Check vs Mate Academy"
                 width={800}
-                height={600}
-                className="object-cover w-full h-80 md:h-96"
+                height={1000}
+                className="object-cover object-top w-full h-full md:h-[500px] lg:h-[600px]"
+                priority
               />
             </div>
-            <div className="absolute -bottom-5 -right-5 bg-[#8B0000] text-white rounded-lg px-5 py-4 shadow-xl">
-              <p className="font-display font-black text-3xl text-[#C9A84C]">2013</p>
-              <p className="text-xs text-white/80 uppercase tracking-widest font-body mt-0.5">Est. Year</p>
+
+            {/* Float Badge */}
+            <div className="absolute -bottom-4 -right-2 md:-bottom-8 md:-right-8 bg-[#8B0000] text-white rounded-xl px-6 py-5 shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20">
+              <div className="flex flex-col items-center">
+                <p className="font-display font-black text-3xl md:text-4xl text-[#C9A84C] leading-none">2013</p>
+                <div className="h-px w-8 bg-[#C9A84C]/30 my-2" />
+                <p className="text-[10px] md:text-xs text-white/80 uppercase tracking-[0.2em] font-body font-bold text-center">Established</p>
+              </div>
             </div>
           </div>
 
