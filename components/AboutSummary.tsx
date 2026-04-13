@@ -7,33 +7,26 @@ export default function AboutSummary() {
       className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"
       aria-label="About Check vs Mate Chess Academy"
     >
-      {/* Background Image Setup */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: 'url(https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg?auto=compress&cs=tinysrgb&w=1920&hq=1)' }}
       />
-      {/* Overlay to preserve text legibility and original color scheme */}
       <div className="absolute inset-0 bg-[#F5F0E8]/90 backdrop-blur-[1px]" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative lg:p-6">
-            {/* Decorative Offset Border - Responsive */}
-            <div className="absolute -top-2 -left-2 md:-top-6 md:-left-6 w-full h-full border-2 border-[#8B0000] rounded-xl opacity-20 md:opacity-100" />
-            
-            {/* Main Image Container */}
-            <div className="relative rounded-xl overflow-hidden shadow-2xl aspect-[4/5] md:aspect-auto">
+            <div className="relative rounded-xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/photo1.jpg"
+                src="/images/placeholder.jpg"
                 alt="Expert Chess Coaching at Check vs Mate Academy"
                 width={800}
                 height={1000}
-                className="object-cover object-top w-full h-full md:h-[500px] lg:h-[600px]"
+                className="object-cover object-[center_30%] w-full h-[400px] sm:h-[480px] md:h-[500px] lg:h-[600px]"
                 priority
               />
             </div>
 
-            {/* Float Badge */}
             <div className="absolute -bottom-4 -right-2 md:-bottom-8 md:-right-8 bg-[#8B0000] text-white rounded-xl px-6 py-5 shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20">
               <div className="flex flex-col items-center">
                 <p className="font-display font-black text-3xl md:text-4xl text-[#C9A84C] leading-none">2013</p>
