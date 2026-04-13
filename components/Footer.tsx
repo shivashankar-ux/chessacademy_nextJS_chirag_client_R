@@ -106,9 +106,9 @@ export default function Footer() {
           <p className="text-white/40 text-sm">
             © {year} Check vs Mate Chess Academy. All rights reserved.
           </p>
-          <a href="#" className="text-white/40 hover:text-white/70 text-xs transition-colors">
+          <Link href="/privacy-policy" className="text-white/40 hover:text-white/70 text-xs transition-colors">
             Privacy Policy
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

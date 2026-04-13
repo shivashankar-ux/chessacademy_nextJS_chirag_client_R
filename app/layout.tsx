@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Check vs Mate Chess Academy",
   },
   description:
-    "Check vs Mate Chess Academy in Gurugram — expert chess coaching for kids of all ages. Group classes, online sessions, home visits. 100+ students trained. 4.9 ⭐ on Google.",
+    "Check vs Mate Chess Academy in Gurugram — expert chess coaching for kids of all ages. Group classes, online sessions, home visits. 1000+ kids trained. 4.9 ⭐ on Google.",
   keywords: [
     "chess academy Gurugram",
     "chess classes for kids",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Check vs Mate Chess Academy | Gurugram",
     description:
-      "Expert chess coaching for kids in Gurugram. Group, online & home visit sessions. 100+ students trained.",
+      "Expert chess coaching for kids in Gurugram. Group, online & home visit sessions. 1000+ kids trained.",
     type: "website",
     locale: "en_IN",
   },

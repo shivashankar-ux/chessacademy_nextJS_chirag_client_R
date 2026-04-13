@@ -60,7 +60,7 @@ export default function GalleryPage() {
           <h2 className="font-display font-black text-white text-3xl md:text-4xl mb-4">Your Child&apos;s Winning Moment Awaits</h2>
           <p className="text-white/75 font-body text-base mb-8">Book a free demo and start your chess journey today.</p>
           <a href="https://wa.me/918800840353?text=Hi!%20I%20would%20like%20to%20enroll%20my%20child." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-[#C9A84C] text-[#8B0000] font-body font-bold text-base rounded tracking-wide hover:bg-[#e8c96a] transition-colors shadow-lg">
-            👦 Enrol Your Child Today
+            👦 Enroll Your Child Today
           </a>
         </div>
       </section>

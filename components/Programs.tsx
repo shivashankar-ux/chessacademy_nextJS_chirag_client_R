@@ -155,7 +155,7 @@ export default function Programs() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-[#C9A84C] text-[#8B0000] font-body font-bold text-base rounded tracking-wide hover:bg-[#e8c96a] transition-colors shadow-lg"
           >
-            👦 Enrol Your Child — 100+ Kids Trained
+            👦 Enroll Your Child — 1000+ Kids Trained
           </a>
         </div>
       </div>

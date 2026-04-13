@@ -19,7 +19,7 @@ export default function Hero() {
             <span className="block text-4xl sm:text-5xl lg:text-7xl" style={{ WebkitTextStroke: "2px #C9A84C", color: "transparent" }}>Master Chess</span>
           </h1>
           <p className="text-white/80 text-lg sm:text-xl font-body leading-relaxed mb-10 max-w-xl">
-            Expert coaching for children of all ages — group classes, online sessions and home visits. 100+ students trained since 2013.
+            Expert coaching for children of all ages — group classes, online sessions and home visits. 1000+ kids trained since 2013.
           </p>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             <a href="#contact" className="px-8 py-4 bg-[#C9A84C] text-[#8B0000] font-body font-bold text-base rounded tracking-wide hover:bg-[#e8c96a] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 shadow-lg">
@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
           <div className="flex flex-wrap gap-8 mt-14 justify-center md:justify-start">
             {[
-              { num: "100+", label: "Kids Trained" },
+              { num: "1000+", label: "Kids Trained" },
               { num: "12+", label: "Years Experience" },
               { num: "4.9★", label: "Google Rating" },
               { num: "4", label: "Age Groups" },
